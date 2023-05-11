@@ -1,0 +1,123 @@
+
+.homeBanner {
+  height: 450px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./../../../../public/assets/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 56px;
+}
+
+.bannerWrapper {
+  color: white;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  text-align: left;
+  justify-content: space-between;
+  height: 55%;
+  font-family: "Varela Round", sans-serif;
+}
+
+.bannerWrapper h1 {
+  font-family: inherit;
+  font-size: 80px;
+  color: inherit;
+}
+.bannerWrapper p {
+  color: inherit;
+  font-size: 25px;
+  font-family: inherit;
+}
+.bannerWrapper a button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background: rgb(117, 117, 117);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.home-main {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: inherit;
+  flex-wrap: wrap;
+  margin: 1% 10%;
+  margin-top: 56px;
+}
+
+.home-main-left {
+  flex-basis: 59%;
+  width: 100%;
+}
+
+.home-main-right {
+  position: sticky;
+  top:100px;
+  flex-basis: 35%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  margin-bottom:56px;
+  width: 100%;
+}
+
+.load-more-blogs{
+  border: 1px solid gray;
+  outline: none;
+  padding:10px 16px;
+  border-radius: 100px;
+  background: transparent;
+  display: block;
+  margin:auto;
+  margin-bottom: 48px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .bannerWrapper {
+    width: 100%;
+    margin: 5%;
+  }
+  .bannerWrapper h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .bannerWrapper p {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .home-main{
+    margin: 0 auto;
+    margin-top: 56px;
+    flex-direction:column-reverse;
+    max-width: 600px;
+  }
+
+  .home-main-left {
+    flex-basis: 100%;
+    flex-basis: unset;
+  }
+
+  .home-main-right {
+    position: unset;
+    flex-basis: 100%;
+    flex-basis: unset;
+
+    /* margin-top:10px; */
+  }
+}

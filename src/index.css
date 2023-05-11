@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ------------logo font------------- */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+:root{
+  /* --bgcolor: #f7f9f9; white bg */
+  --bgcolor:#EAFDFC ;
+  /* --navmanu-bgcolor: #FAF7F0; */
+  --navmanu-bgcolor: #BFEAF5 ;
+  --form-bgcolor: rgb(245, 245, 245);
+  /* --form-bgcolor: white; */
+  /* --blogpost-bgcolor:rgba(255, 255, 255, 0.865); */
+  --home-rightbar-bgcolor:white; 
+  /* --footer-bgcolor:rgba(128, 128, 128, 0.616); */
+  --footer-bgcolor:#2B3467;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #253741;
+  /* font-family: "Varela Round", sans-serif; */
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+  background: transparent;
+}
+
+body {
+  /* background: #03a6ff; */
+  background:  var(--bgcolor);
+
+
+  /* --------------done this so the footer appears at the bottom of the page--------------- */
+  /* min-height: 80vh;
+  position: relative; */
+}
+
+hr{
+  border: none;
+  height:1px;
+  background:rgba(128, 128, 128, 0.2);
+  width:100%;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  height: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.269);
+  opacity: 0.4;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:900px) {
+  
 }
