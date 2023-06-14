@@ -1,0 +1,27 @@
+.settings{
+  min-height:80vh;
+
+}
+.settings .settings-title {
+  padding: 20px;
+}
+
+.settingsWrapper {
+  display: flex;
+  padding: 20px;
+}
+
+.settings-sidebar {
+  flex-basis: 19%;
+  /* height: 100px; */
+  /* background-color: lightgreen; */
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.settings-main {
+  flex-basis: 80%;
+  padding: 0 20px;
+}

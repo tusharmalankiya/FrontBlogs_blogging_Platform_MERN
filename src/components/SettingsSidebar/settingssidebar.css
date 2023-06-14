@@ -1,0 +1,16 @@
+.settings-sidebar-container{
+    width:100%;
+    height:100%;
+    /* border: 1px solid brown; */
+}
+
+.settings-sidebar-menuItem{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px;
+
+}
+
+.settings-sidebar-menuItem .active{
+    background: gray;
+}

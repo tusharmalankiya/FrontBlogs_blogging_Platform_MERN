@@ -11,6 +11,8 @@ nav {
   z-index: 9999;
   background: var(--navmanu-bgcolor);
   overflow: hidden;  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
  
 }
 .navbarWrapper {
@@ -58,12 +60,12 @@ nav {
 }
 .navbarBtn {
   border: none;
-  background: #03a6ff;
+  background: var(--button-color);
   border-radius: 7px;
   margin: 0 10px;
   padding: 10px 15px;
   color: #fdfdf9;
-  border: 1px solid #03a6ff;
+  border: 1px solid var(--button-color);
   cursor: pointer;
   outline: none;
 }
@@ -74,17 +76,17 @@ nav {
   color: inherit;
 }
 .navbarBtn.sign-up:first-child:hover {
-  background: #03a6ff;
+  background: var(--button-color);
   color: #fdfdf9;
 }
 .navbarBtn.sign-up:first-child:active {
-  background: #fdfdf9;
-  color: #03a6ff;
+  background: transparent;
+  color: var(--button-color);
 }
 .navbarBtn:hover {
-  background: #fdfdf9;
-  color: #03a6ff;
-  border: 1px solid #03a6ff;
+  background: transparent;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
   transition: all 0.3s;
 }
 .navbarBtn:active {

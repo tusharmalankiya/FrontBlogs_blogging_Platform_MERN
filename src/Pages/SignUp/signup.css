@@ -1,0 +1,136 @@
+.signup {
+  margin: auto;
+  padding-top: 30px;
+  box-sizing: border-box;
+  min-height: 55vh;
+  padding-bottom: 100px;
+  position: relative;
+}
+.signup-form {
+  border-radius: 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.signup-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.signup-placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 20px;
+
+  left: 5px;
+  background: var(--bgcolor);
+  padding: 0 8px;
+  transition: all 0.3s;
+  cursor: auto;
+  color: gray;
+}
+
+.signup-placeholder.focus {
+  top: 12px;
+  left: 25px;
+  font-size: 13px;
+  line-height: 14px;
+  color: black;
+}
+
+.signup-form-input {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 12px 0;
+  padding: 12px;
+  width: 100%;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  background: transparent;
+}
+
+.signup-view-icon,
+.signup-view-icon2 {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bgcolor);
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.signup-view-icon div,
+.signup-view-icon2 div {
+  pointer-events: none;
+}
+
+.signup-view-icon.hide,
+.signup-view-icon2.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.signup-form input:focus {
+  padding: 13px;
+}
+.signup-form button {
+  background: var(--button-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f7f9f9;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.signupWrapper .sign-in-now {
+  width: 100%;
+  border-top: 1px solid gray;
+  position: relative;
+}
+.signupWrapper .sign-in-now::before {
+  content: "or";
+  position: absolute;
+  font-size: 20px;
+  line-height: 22px;
+  top: -12px;
+  padding: 0 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bgcolor);
+}
+.signupWrapper .sign-in-now p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+  color: grey;
+}
+.signupWrapper .sign-in-now button {
+  margin: 0px;
+}
+
+@media (max-width: 900px) {
+  .signup {
+    padding: 30px 20px;
+  }
+}

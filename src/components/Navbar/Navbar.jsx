@@ -10,7 +10,6 @@ const Navbar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
   const handleMenu = () => {
-    console.log("clicked");
     setIsMenu(!isMenu);
   };
   return (
@@ -18,7 +17,6 @@ const Navbar = () => {
       <nav>
         <div className="menuButton" onClick={handleMenu}>
           <GiHamburgerMenu size={25} className={"ham " + (!isMenu && "open")} />
-          {/* <GiHamburgerMenu size={25} className={'ham open'} /> */}
           <IoClose size={25} className={"ham " + (isMenu && "close")} />
         </div>
 
@@ -32,6 +30,7 @@ const Navbar = () => {
               </h4>
             <ul className="navbarList">
               <Link to="/"><li className="navbarItem">Home</li></Link>
+              <Link to="/settings"><li className="navbarItem">Settings</li></Link>
               <li className="navbarItem">Category</li>
               <li className="navbarItem">Blogs</li>
             </ul>
@@ -54,6 +53,9 @@ const Navbar = () => {
             <ul className="menuList">
               <Link to="/" onClick={handleMenu}>
                 <li className="menuItem">Home</li>
+              </Link>
+              <Link to="/settings" onClick={handleMenu}>
+                <li className="menuItem">Settings</li>
               </Link>
               <li className="menuItem">Category</li>
               <li className="menuItem">Blogs</li>

@@ -5,18 +5,17 @@ import { Link } from "react-router-dom";
 
 //icons
 import { BsCheck2Circle } from "react-icons/bs";
-import { FiCheckCircle } from "react-icons/fi";
-import { BiCheckCircle } from "react-icons/bi";
 
 
-const IsOk = () => {
+
+const IsOk = ({isOk}) => {
   return (
     <>
-      <div className="isOKContainer">
+      <div className={"isOKContainer " + (isOk && 'isok')} > 
         <div className="ok-body">
           <div className="ok-up">
             <div className="ok-icon">
-              <BiCheckCircle />
+              <BsCheck2Circle />
             </div>
           </div>
           <div className="ok-down">

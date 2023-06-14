@@ -5,16 +5,11 @@
 
 
 :root{
-  /* --bgcolor: #f7f9f9; white bg */
-  --bgcolor:#EAFDFC ;
-  /* --navmanu-bgcolor: #FAF7F0; */
+  --bgcolor:#FFFAF4 ;
   --navmanu-bgcolor: #BFEAF5 ;
-  --form-bgcolor: rgb(245, 245, 245);
-  /* --form-bgcolor: white; */
-  /* --blogpost-bgcolor:rgba(255, 255, 255, 0.865); */
-  --home-rightbar-bgcolor:white; 
-  /* --footer-bgcolor:rgba(128, 128, 128, 0.616); */
+  --home-rightbar-bgcolor:#FFFAF4; 
   --footer-bgcolor:#2B3467;
+  --button-color:#146C94;
 
 }
 

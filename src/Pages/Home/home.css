@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: flex-start;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./../../../../public/assets/banner1.jpg");
+    url("./../../../public/assets/banner1.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 56px;

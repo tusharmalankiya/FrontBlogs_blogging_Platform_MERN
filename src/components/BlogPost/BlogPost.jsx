@@ -10,15 +10,14 @@ const BlogPost = (props) => {
           <Link to="/sign-in">
           <div className="author-details">
             <img src={props.blog_img} alt="" />
-            <span>Author</span>
+            <span>{props.author}</span>
           </div>
           <div className="blog-title-desc">
             <h2 className="blog_title">
-              What I Learned as a Product Designer at Apple
+              {props.title}
             </h2>
             <p className="blog_desc">
-              In 2021 I landed my dream job. Working at Apple, the holy grail of
-              minimalistic design, innovation and creativity. A place where
+            {props.desc}
             </p>
           </div>
           </Link>
